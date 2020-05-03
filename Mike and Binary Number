@@ -1,0 +1,17 @@
+class People:
+    def school(self,b):
+        c=[''.join(p) for p in permutations(b)]
+        c=list(set(c))
+        c.sort()
+        for i in c:
+            print(i,end=' ')
+        print()
+T=int(input())
+from itertools import permutations
+for i in range(T):
+    N=int(input())
+    a=bin(N)
+    b=a[2::]
+    c=None
+    p1=People()
+    p1.school(b)
