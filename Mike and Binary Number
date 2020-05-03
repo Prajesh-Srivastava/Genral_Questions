@@ -3,9 +3,7 @@ class People:
         c=[''.join(p) for p in permutations(b)]
         c=list(set(c))
         c.sort()
-        for i in c:
-            print(i,end=' ')
-        print()
+        print(*c)
 T=int(input())
 from itertools import permutations
 for i in range(T):
